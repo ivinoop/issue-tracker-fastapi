@@ -1,0 +1,16 @@
+[
+  {
+    "id": "c279e63f-6f1f-4205-9056-c04b7f8d6086",
+    "title": "Issue One",
+    "description": "This is a test issue",
+    "priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": "7f327a5d-ce67-4cba-af39-2413fb58fa4f",
+    "title": "foo",
+    "description": "This is the updated foo description",
+    "priority": "medium",
+    "status": "open"
+  }
+]
