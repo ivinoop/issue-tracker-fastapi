@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from app.routes.issues import router as issues_router
 from app.middleware.timer import timing_middleware
 from fastapi.middleware.cors import CORSMiddleware
+# import os
 
 app = FastAPI()
 
@@ -16,6 +17,16 @@ app.add_middleware(
 )
 
 app.include_router(issues_router)
+
+
+# Disable docs in production 
+# app = FastAPI(
+#   docs_url=None if os.getenv("ENV") == "production" else "/docs",
+#   redoc_url=None if os.getenv("ENV") == "production" else "/redoc",
+# )
+
+
+# MOCK_DATA
 # items = [
 #   {"id": 1, "name": "Item One"},
 #   {"id": 2, "name": "Item Two"},
